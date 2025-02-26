@@ -6465,7 +6465,7 @@ extern "C" {
         policy: *mut c_int,
         param: *mut crate::sched_param,
     ) -> c_int;
-    pub fn pthread_rwlock_timedrd_lock(
+    pub fn pthread_rwlock_timedrdlock(
         rwlock: *mut crate::pthread_rwlock_t,
         abstime: *const crate::timespec,
     ) -> c_int;
